@@ -39,7 +39,7 @@ const Home = () => {
         } else {
           clearInterval(intervalId);
         }
-      }, 2000); // Change message every 2s
+      }, 4000); // Change message every 4sec
     }
 
     return () => clearInterval(intervalId);
@@ -69,3 +69,4 @@ const Home = () => {
 }
 
 export default Home
+
