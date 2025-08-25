@@ -11,7 +11,7 @@ const Timeline = () => {
           "https://mern-portfolio-backend-ng23.onrender.com/api/v1/timeline/getall",
           { withCredentials: true }
         );
-        setTimeline(data.timelines);
+        setTimeline(data.timelines.reverse());
       } catch (error) {
         console.error("Error fetching timeline data", error);
       }
@@ -53,3 +53,4 @@ const Timeline = () => {
 };
 
 export default Timeline;
+
